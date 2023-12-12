@@ -31,3 +31,16 @@ export function AuthStack({ stack, app }: StackContext) {
 
   return { auth };
 }
+
+// pnpm dlx aws-api-gateway-cli-test \
+// --user-pool-id='us-east-1_Bs2q5s6w1' \
+// --app-client-id='2njvgineb81tq19ur374cgiifv' \
+// --cognito-region='us-east-1' \
+// --identity-pool-id='us-east-1:de2ef346-7912-4c31-86e8-ea76a3b43c9f' \
+// --invoke-url='https://bsj6r8q746.execute-api.us-east-1.amazonaws.com' \
+// --api-gateway-region='us-east-1' \
+// --username='admin@example.com' \
+// --password='Passw0rd!' \
+// --path-template='/notes' \
+// --method='POST' \
+// --body='{"content":"hello world","attachment":"hello.jpg"}'
